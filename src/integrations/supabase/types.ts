@@ -14,7 +14,111 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      applications: {
+        Row: {
+          ai_feedback: string | null
+          created_at: string
+          id: string
+          payload: Json
+          status: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          ai_feedback?: string | null
+          created_at?: string
+          id?: string
+          payload: Json
+          status?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          ai_feedback?: string | null
+          created_at?: string
+          id?: string
+          payload?: Json
+          status?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      cover_letters: {
+        Row: {
+          created_at: string
+          generated_text: string
+          id: string
+          target_company: string | null
+          target_role: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          generated_text: string
+          id?: string
+          target_company?: string | null
+          target_role: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          generated_text?: string
+          id?: string
+          target_company?: string | null
+          target_role?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      cvs: {
+        Row: {
+          content: Json
+          created_at: string
+          generated_text: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          content: Json
+          created_at?: string
+          generated_text: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          content?: Json
+          created_at?: string
+          generated_text?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          full_name: string | null
+          id: string
+          phone: string | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          full_name?: string | null
+          id: string
+          phone?: string | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
