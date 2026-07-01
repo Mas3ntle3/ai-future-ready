@@ -83,7 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Free AI-powered computer literacy programme for young people in Gauteng. Check eligibility, apply, and build your CV with smart assistants.",
       },
-      { property: "og:title", content: "AI Community Computer Learning Assistant" },
+      { property: "og:title", content: "AI Community Computer Learning Assistant — Free classes in Gauteng" },
       {
         property: "og:description",
         content:
@@ -91,6 +91,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "AI Community Computer Learning Assistant — Free classes in Gauteng" },
+      { name: "description", content: "AI Community Computer Learning Assistant helps young people in Gauteng apply for free computer literacy classes using AI." },
+      { property: "og:description", content: "AI Community Computer Learning Assistant helps young people in Gauteng apply for free computer literacy classes using AI." },
+      { name: "twitter:description", content: "AI Community Computer Learning Assistant helps young people in Gauteng apply for free computer literacy classes using AI." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ade6ac5-420e-4646-af9e-cb27820bb110/id-preview-bb44f320--f6c8009f-ca17-44b2-a096-06d3e156fdf0.lovable.app-1782852003514.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ade6ac5-420e-4646-af9e-cb27820bb110/id-preview-bb44f320--f6c8009f-ca17-44b2-a096-06d3e156fdf0.lovable.app-1782852003514.png" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
